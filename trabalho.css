@@ -1,0 +1,33 @@
+*{
+    font-family: monospace;
+    
+}
+
+.container {
+    border: 1px solid #000000;
+    margin-top: 10px;
+    background-color: #2786;
+}
+    
+header, footer {
+    background-color: black;
+}
+
+header, footer, .main, aside{
+    padding: 5px;
+}
+
+h1, footer{
+    color: aliceblue;
+}
+
+.tamanho {
+    height: 270px;
+    width: 200px;
+}
+
+.texto-centralizado{
+    text-align: center;
+}
+
+
