@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="trabalho.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <title>MinhaPagina</title>
+</head>
+<body>
+
+  <div class="container">
+    <header class="row">
+      <h1 class="texto-centralizado">Artistas</h1>
+    </header>
+    <div class="row">
+      <form action="http://www.google.com/search" method="get">
+        <input name="q" placeholder="digite sua busca"> 
+        <input type="submit" name="enviar" value="Pesquisar">
+        <input type="reset" name="reset" value="Limpar">
+      </form>
+    </div>
+
+
+    <!--===================NAV==============-->
+    <nav class="navbar navbar-expand-sm row">
+      <div class="container-fluid justify-content-center">
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#endT">Albuns de Tyler</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#endK">Albuns de Kendrick</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#endS">Albuns de Steve</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="row">
+      <div class="main col">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+          <!--=====================indicadores INICIO===========================-->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          </div>
+          
+          <!--================ slide carossel======= -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="imagens/kend.jpeg" alt="Los Angeles" class="d-block tamanho" style="width:100%">
+              <div class="carousel-caption">
+                <h3>Kendrick Lamar</h3>
+                <p>rapper</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="imagens/steveLacy.jpg" alt="Chicago" class="d-block tamanho" style="width:100%">
+              <div class="carousel-caption">
+                <h3>Steve Lacy</h3>
+                <p>Cantor e Compositor</p>
+              </div> 
+            </div>
+            <div class="carousel-item">
+              <img src="imagens/tylerB.jpg" alt="New York" class="d-block tamanho" style="width:100%">
+              <div class="carousel-caption">
+                <h3>Tyler The Creator</h3>
+                <p>Rapper</p>
+              </div>  
+            </div>
+          </div>
+          
+          <!--===================icons==================== -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+
+        <div class="container-fluid mt-2">
+          <h3>Kendrick, Tyler and Steve</h3>
+        </div>
+      </div>
+          <!--======================Segunda parte CARD==========================-->
+      <aside class="complementary col">
+        <div class="mt-3">
+          <h2>Sobre os artistas</h2>          
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Tyler</td>
+                <td>Okonma</td>
+              </tr>
+              <tr>
+                <td>Kendrick</td>
+                <td>Duckworth </td>
+              </tr>
+              <tr>
+                <td>Steve</td>
+                <td>Moya</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        </aside>
+      </div>
+
+      
+      <!--=========card albuns=============-->
+      <section class="row">
+        <h2 class="texto-centralizado"><a id="endT">Albuns de Tyler The Creator</a></h2>
+        <div class="card col">
+          <img class="card-img-top" src="imagens/igor.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">IGOR</h4>
+            <p class="card-text">Álbum de 2019</p>
+            <a href="#" class="btn btn-primary">Ver Álbum</a>
+          </div>
+        </div>
+        <div class="card col">
+          <img class="card-img-top" src="imagens/BASTARD.png" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">BASTARD</h4>
+            <p class="card-text">Álbum de 2009</p>
+            <a href="#" class="btn btn-primary">Ver Álbum</a>
+          </div>
+        </div>
+        <div class="card col">
+          <img class="card-img-top" src="imagens/CMIYGL.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">CMIYGL</h4>
+            <p class="card-text">Álbum de 2021</p>
+            <a href="#" class="btn btn-primary">Ver Álbum</a>
+          </div>
+        </div>
+        <div class="card col">
+          <img class="card-img-top" src="imagens/FB.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">FLOWER BOY</h4>
+            <p class="card-text">Álbum de 2013</p>
+            <a href="#" class="btn btn-primary">Ver Álbum</a>
+          </div>
+        </div>
+      </section>
+
+      <!--=================STEVE LACY================================-->
+      <section class="row">
+        <h2 class="texto-centralizado"><a id="endS">Albuns de Steve Lacy</a></h2>
+        <div class="card col">
+          <img class="card-img-top" src="imagens/albumSteve.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">GEMINI RIGHTS</h4>
+            <p class="card-text">Álbum de 2022</p>
+            <a href="#" class="btn btn-primary">Ver Álbum</a>
+          </div>
+        </div>
+        <div class="card col">
+          <img class="card-img-top" src="imagens/SteveLacy_ApolloXXI.webp" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">APOLLO XXI</h4>
+            <p class="card-text">Álbum de 2019</p>
+            <a href="#" class="btn btn-primary">Ver Álbum</a>
+          </div>
+        </div>
+        <div class="card col">
+          <img class="card-img-top" src="imagens/demo.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">STEVE LACY`S DEMO</h4>
+            <p class="card-text">Álbum de 2017</p>
+            <a href="#" class="btn btn-primary">Ver Álbum</a>
+          </div>
+        </div>
+        <div class="card col">
+          <img class="card-img-top" src="imagens/lofi.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">THE LO-FIS</h4>
+            <p class="card-text">Álbum de 2020</p>
+            <a href="#" class="btn btn-primary">Ver Álbum</a>
+          </div>
+        </div>
+      </section>
+
+      <!--=========================ALBUM KENDRICK=======================-->
+      <section class="row">
+        <h2 class="texto-centralizado"><a id="endK">Albuns de Kendrick Lamar</a></h2>
+        <div class="card col">
+          <img class="card-img-top" src="imagens/kenALB.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">DAMN</h4>
+            <p class="card-text">Álbum de 2017</p>
+            <a href="#" class="btn btn-primary">Ver Álbum</a>
+          </div>
+        </div>
+        <div class="card col">
+          <img class="card-img-top" src="imagens/GOOD.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">GOOD KID, M.A.A.D</h4>
+            <p class="card-text">Álbum de 2012</p>
+            <a href="#" class="btn btn-primary">Ver Álbum</a>
+          </div>
+        </div>
+        <div class="card col">
+          <img class="card-img-top" src="imagens/2022kenab.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">MR.MORALE</h4>
+            <p class="card-text">Álbum de 2022</p>
+            <a href="#" class="btn btn-primary">Ver Álbum</a>
+          </div>
+        </div>
+        <div class="card col">
+          <img class="card-img-top" src="imagens/Black_Panther_-_The_Album_cover.png" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">BLACK PANTHER</h4>
+            <p class="card-text">Álbum de 2018</p>
+            <a href="#" class="btn btn-primary">Ver Álbum</a>
+          </div>
+        </div>
+      </section>
+
+      <!--================links=====================-->
+      <div class="card row">
+        <div class="card-body">
+          <h5 class="card-title">Mais sobre os artistas</h5>
+          <a href="https://pt.wikipedia.org/wiki/Steve_Lacy_(m%C3%BAsico)" class="card-link">Steve Lacy</a>
+          <a href="#" class="card-link">Tyler The Creator</a>
+          <a href="#" class="card-link">Kendrick Lamar</a>
+        </div>
+      </div>
+
+      <ul class="nav card row flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="https://open.spotify.com/artist/57vWImR43h4CaDao012Ofp">Spotify de Steve Lacy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://open.spotify.com/artist/2YZyLoL8N0Wb9xBt1NhZWg">Spotify de Kendrick Lamar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://open.spotify.com/artist/4V8LLVI7PbaPR0K2TGSxFF">Spotify de Tyler The Creator</a>
+        </li>
+      </ul>
+      
+      <!--=========================rodape da pagina==================-->
+      <footer class="row">
+        <p>29/11/2022</p>
+      </footer>
+    </div>
+    
+    
+</body>
+</html>
